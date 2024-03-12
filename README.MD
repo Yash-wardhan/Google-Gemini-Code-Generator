@@ -3,6 +3,7 @@
 This project provides a code generator for Google Gemini ads. It allows you to easily create Gemini ad creatives using a simple interface.
 
 ## Getting Started
+https://github.com/Yash-wardhan/Google-Gemini-Code-Generator/assets/56475291/20805012-97e8-4fd9-b441-79acce718ba8
 
 1. Clone this repository to your local machine.
 2. Install the required dependencies by running:
