@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+body::after{
+    opacity: .5;
+    filter: blur(3);
+    z-index: -1;
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-image:url('https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+}
+h1{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+form{
+    padding: 20px 20px;
+    border-radius: 5px;
+    box-shadow: 2px 3px 125px #ddd;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width:  50%;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    border: none;
+    outline: none;
+    transition: 50ms ease-in-out;
+}
+textarea:focus-within{
+    border: 5px solid skyblue;
+}
+select{
+    border: none;
+    padding: 10px 20px;
+    outline: skyblue;
+}
+option{
+    padding: 10px 20px;
+
+}
+p{
+    border: 2px solid #ddd;
+    padding: 10px 15px;
+    transition: .5s ease-in-out;
+}
+p:hover{
+    background-color: darkblue;
+    color: white;
+    cursor: pointer;
+}
+.result{
+    background:#000 ;
+    width: 100%;
+    height: 300px;
+    color: white;
+    overflow: auto;
+    padding: 20px 20px;
+    border-radius: 10px ;
+}
+#copy{
+    padding: 10px 20px;
+    outline: none;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    cursor: pointer;
+    background: transparent;
+    transition: .1s all ease-in-out;
+}
+#copy:hover{
+    background:skyblue;
+    color: white;
+}
